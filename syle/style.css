@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poiret+One&family=Press+Start+2P&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+header img{
+    width: 20vw;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover{
+        color: black;
+}
+
+ul li{
+    list-style: none;
+}
+
+nav ul li{
+    margin:0 5px;
+}
+
+
+ /*//////////////////GRID//////////////////*/
+
+#gridArea{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer"  
+    ;
+    grid-row-gap: 0.5vh;
+}
+
+header {
+    grid-area: header;
+    justify-self: center;
+    padding: 0.5vh 0;
+}
+nav{
+    grid-area: nav;
+    background-color: darkgrey;;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    background-color: darkgrey;;
+}
+
+/*/////////grid main del index/////////*/
+#gridArea_main_index{
+    display: grid;
+    grid-template-areas: 
+    "titulo1 titulo1 imagen1"
+    "texto1 texto1 imagen1"
+    "bottom1  . imagen1"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5vw;
+    padding: 2vh 15vw;
+}
+
+.titulo1_main_index{
+    grid-area: titulo1;
+    align-self: start;
+   
+}
+.imagen_main_index{
+    grid-area: imagen1;
+}
+.texto_main_index{
+    grid-area: texto1;
+    padding: 1.5vh 0;
+}
+.bottom_main_index{
+    grid-area: bottom1;
+    justify-self: start;
+    align-self: end;
+    padding: 0.5vh 2.5vw;
+}
+/*/////////grid main del BRANDING/////////*/
+#gridArea_main_branding{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 2vh 15vw;
+}
+
+
+/*/////////grid main del WEBSITE/////////*/
+#gridArea_main_web{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 2vh 15vw;
+}
+
+
+/*/////////grid main del ANIMATION/////////*/
+#gridArea_main_ani{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    padding: 2vh 15vw;
+}
+
+
+
+/*/////////grid main del CONTACTO/////////*/
+#gridArea_main_contacto{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 2vh 15vw;
+}
+
+
+
+/*//////////////////FLEX//////////////////*/
+.menuflex_header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.footer_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.legal_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: gray;
+    padding: 0.7vh 0;
+}
+
+.footer_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2vh 0;
+}
+
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+}
+
+.flex_inicioseccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2vh 15vw;
+}
+
+.flexcolum_br_we{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 7.5vw;
+}
+
+.flex_main_animation{
+    display: flex;
+    flex-direction: row;
+}
+
+/*////////OTRAS CLASES//////////*/
+
+.slaider{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_desarrollo{
+    font-family: 'Oswald', sans-serif ;
+    font-weight: 200;
+}
+
+.titulo_iniciodeseccion{
+    font-size: 4rem ;
+}
+
+.texto_iniciodeseccion{
+    font-family:'Oswald', sans-serif ;
+    font-weight: 500;
+    color: white;
+    font-size: 10rem;
+}
+
+.footer_img_logo {
+    /*para logo del footer*/
+    width: 10vw;
+    padding: 3vw 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer_img{
+    width: 1.2vw;
+    padding: 0.2VW 0 0 0;
+}
+
+.div_w20{
+    /*para los footer*/
+    width: 20%;
+}
+
+.div_w80{
+    /*para las img animation*/
+    width: 100%;
+}
+
+.div_icon_secction{
+    color: white;
+    padding: 2px 5px;
+}
+
+.imagenresponsive{
+    width: 100%;
+    height: auto;
+}
+
+
+.margin_bottom_2vw{
+    margin-bottom: 2vw;
+}
+
+
+.backgroundVerde{
+    background-color:rgba(183, 222, 184, 1);
+
+}
+
+.backgrounCian{
+    background-color:rgba(153, 179, 209, 1);
+
+}
+
+.backgrounRosa{
+    background-color:rgba(211, 147, 147, 1);
+
+}
+
+.backgrounBrouwn{
+    background-color:rgba(88, 64, 64, 1);
+
+}
+
+.colorVerde{
+    color:rgba(183, 222, 184, 1);
+
+}
+
+.colorCian{
+    color:rgba(153, 179, 209, 1);
+
+}
+
+.colorRosa{
+    color:rgba(211, 147, 147, 1);
+
+}
+
+.colorBrouwn{
+    color:rgba(88, 64, 64, 1);
+
+}
+
+.fontfamilypress{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+}
+
+.fontfamilyPoiret{
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5rem;
+
+}
+
+
+.fondo_slaider{
+    background-image: url('../img/slider_example1.jpg') ;
+    background-size:cover;
+    width: 100vw;
+    background-position: center center;
+}
+
+
+/*--------------------------------------------*/
+/*MEDIA QUERIES*/
+/*SMARTPHONE*/
+@media (max-width: 480px){
+    #gridArea_main_index{
+        display: grid;
+        grid-template-areas: 
+        "titulo1"
+        "imagen1"
+        "texto1"
+        "bottom1"
+        ;
+        grid-template-columns: 1fr;
+        grid-column-gap: 5vw;
+        padding: 1vh 5vw;
+    } 
+    /*/////////grid main del BRANDING/////////*/
+    #gridArea_main_branding{
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 1fr ;
+        padding: 1vh 2vw;
+    }
+
+    /*/////////grid main del WEBSITE/////////*/
+    #gridArea_main_web{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr;
+    padding: 1vw 2vw;
+    }
+    /*/////////grid main del ANIMATION/////////*/
+    #gridArea_main_ani{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    padding: 1vH 2vw;
+    }
+    /*/////////grid main del CONTACTO/////////*/
+    #gridArea_main_contacto{
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 1fr;
+        padding: 1vh 2Vw;
+}
+
+
+    .flex_main_animation{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexcolum_br_we{
+        display: flex;
+        flex-direction: column;
+        padding: 1vh 2vw;
+    }
+
+    .imagenresponsive{
+        width: 90vw;
+        height: auto;
+    }
+
+    .margin_bottom_2vw{
+        margin-bottom: 2vw;
+        width: 90vw;
+    }
+
+    .footer_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2vh 0;
+    }
+    .displaynone{
+        display: none;
+    }
+    .footer_img_logo {
+        /*para logo del footer*/
+        width: 30vw;
+        padding: 1vw 0;
+    }
+    .div_w20{
+        /*para los footer*/
+        width: 80%;
+    }
+    footer ul li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 2vh 0;
+        justify-content: center;
+
+    }
+    .footer_img{
+        width: 5vw;
+    }
+
+    .texto_iniciodeseccion {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        color: white;
+        font-size: 5rem;
+    }
+    .titulo_iniciodeseccion {
+        font-size: 2rem;
+    }
+
+    header img{
+        width: 50vw;
+    }
+}
+
+
+
+/*--------------------------------------------*/
+/*TABLET*/
+@media (min-width:481px) and (max-width:1023px){
+    #gridArea_main_index{
+        display: grid;
+        grid-template-areas: 
+        "titulo1"
+        "imagen1"
+        "texto1"
+        "bottom1"
+        ;
+        grid-template-columns: 1fr;
+        grid-column-gap: 5vw;
+        padding: 1vw 5vw;
+    } 
+    /*/////////grid main del BRANDING/////////*/
+    #gridArea_main_branding{
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 1fr ;
+        padding: 1vh 2vw;
+    }
+
+    /*/////////grid main del WEBSITE/////////*/
+    #gridArea_main_web{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr;
+    padding: 1vw 2vw;
+    }
+
+    /*/////////grid main del ANIMATION/////////*/
+    #gridArea_main_ani{
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        padding: 1vw 2vw;
+        }
+
+    /*/////////grid main del CONTACTO/////////*/
+    #gridArea_main_contacto{
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 1fr;
+        padding: 1vh 2Vw;
+    }
+        
+    .flex_main_animation{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexcolum_br_we{
+        display: flex;
+        flex-direction: column;
+        padding: 1vh 2vw;
+    }
+
+    .imagenresponsive{
+        width: 90vw;
+        height: auto;
+    }
+
+    .margin_bottom_2vw{
+        margin-bottom: 2vw;
+        width: 90vw;
+    }
+
+    .footer_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2vh 0;
+    }
+    .displaynone{
+        display: none;
+    }
+
+    .footer_img_logo {
+        /*para logo del footer*/
+        width: 30vw;
+        padding: 1vw 0;
+    }
+    .div_w20{
+        /*para los footer*/
+        width: 80%;
+
+    }
+
+    footer ul li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 2vh 0;
+        justify-content: center;
+    }
+
+    footer h3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 2vh 0;
+        justify-content: center;
+    }
+
+
+    .footer_img{
+        width: 5vw;
+    }
+
+    .texto_iniciodeseccion {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        color: white;
+        font-size: 6rem;
+    }
+
+    .titulo_iniciodeseccion {
+        font-size: 3rem;
+    }
+
+    header img{
+        width: 35vw;
+    }
+}
+
+
+/*--------------------------------------------*/
+/*DESKTOP*/
+@media (min-width:1024px){
+
+}
