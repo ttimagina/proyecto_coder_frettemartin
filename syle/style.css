@@ -34,6 +34,7 @@ nav ul li{
 }
 
 
+
  /*//////////////////GRID//////////////////*/
 
 #gridArea{
@@ -54,14 +55,14 @@ header {
 }
 nav{
     grid-area: nav;
-    background-color: darkgrey;;
+    background-color: darkgrey;
 }
 main{
     grid-area: main;
 }
 footer{
     grid-area: footer;
-    background-color: darkgrey;;
+    background-image:  linear-gradient(darkgrey, rgba(39, 50, 39, 1) );
 }
 
 /*/////////grid main del index/////////*/
@@ -74,7 +75,7 @@ footer{
     ;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 5vw;
-    padding: 2vh 15vw;
+    padding: 2vw 15vw;
 }
 
 .titulo1_main_index{
@@ -100,7 +101,7 @@ footer{
     display: grid;
     justify-self: center;
     grid-template-columns: 1fr 1fr;
-    padding: 2vh 15vw;
+    padding: 2vw 15vw;
 }
 
 
@@ -109,7 +110,7 @@ footer{
     display: grid;
     justify-self: center;
     grid-template-columns: 1fr 1fr;
-    padding: 2vh 15vw;
+    padding: 2vw 15vw;
 }
 
 
@@ -118,7 +119,7 @@ footer{
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    padding: 2vh 15vw;
+    padding: 2vw 15vw;
 }
 
 
@@ -128,7 +129,7 @@ footer{
     display: grid;
     justify-self: center;
     grid-template-columns: 1fr 1fr;
-    padding: 2vh 15vw;
+    padding: 2vw 15vw;
 }
 
 
@@ -144,7 +145,7 @@ footer{
 .footer_flex{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .legal_flex{
@@ -313,6 +314,49 @@ footer{
     width: 100vw;
     background-position: center center;
 }
+
+
+
+/*///////////////////animaciones-transiciones ///////////////*/
+
+.logoanimado{
+    animation-name: logoanima1;
+    animation-iteration-count: 1 ;
+    animation-duration: 2s;
+    animation-delay: 5s;
+}
+@keyframes logoanima1{
+    /*inicio*/
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    /*fin*/
+    to{
+        transform: translateY(0);
+
+    }
+}
+
+/*transicion*/
+.transicion_bottom_vermas{
+    transition: 1s, color;
+}
+
+.transicion_bottom_vermas:hover{
+    background-color:gainsboro;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*--------------------------------------------*/
